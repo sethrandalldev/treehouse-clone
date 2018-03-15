@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <section>
     <div class="container">
         <div class="row">
             <div class="one column header">
@@ -23,19 +24,47 @@
             </div>
         </div>
     </div>
-    <div class="container fold">
-            <div class="row">
-                <div class="half column text">
-                    <h3>
-                        Learn Web Design, Coding &amp; Much More
-                    </h3>
-                    <p>Treehouse offers a 7-day free trial to our course library! Choose from 1,000s of hours of content, from Javascript to Python to iOS. Learn to code and get the skills you need to launch a new career.</p>
-                </div>
-                <div class="half column form">
-
-                </div>
+    </section>
+    <section class="fold">
+    <div class="container">
+        <div class="row">
+            <div class="half column text">
+                <h3>
+                    Learn Web Design, Coding &amp; Much More
+                </h3>
+                <p>Treehouse offers a 7-day free trial to our course library! Choose from 1,000s of hours of content, from Javascript to Python to iOS. Learn to code and get the skills you need to launch a new career.</p>
+            </div>
+            <div class="half column form">
+                <form>
+                    <h3 class="form-header">Try it free for 7 days then $25/mo. thereafter</h3>
+                    <div class="input-row">
+                        <div class="half-input">
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname">
+                        </div>
+                        <div class="half-input">
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="half-input">
+                            <label for="email">Email address</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="half-input">
+                            <label for="password">Password</label>
+                            <input type="text" id="password">
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                        <input type="submit" value="Claim Your Free Trial >">
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
+    </section>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/scripts.js"></script>

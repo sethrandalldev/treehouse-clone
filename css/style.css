@@ -52,6 +52,9 @@ html {
     float: left;
   }
 }
+textarea, input, button { 
+  outline: none; 
+}
 
 .header h1 {
   float: left;
@@ -99,4 +102,54 @@ html {
 }
 .fold .text p {
   font-weight: bold;
+}
+.fold .form {
+  background: #FFF;
+  border-radius: 5px;
+}
+.fold .form-header {
+  background: #637a91;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.fold .input-row {
+  margin: 0 30px;
+  width: 100%;
+}
+.fold .half-input {
+  float: left;
+  padding: 15px 2px;;
+  width: 50%;
+}
+.fold .half-input input,
+.fold .half-input label {
+  display: block;
+}
+.fold .half-input input {
+  background: #f9fafa;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  padding: .75rem 1rem;
+  width: 100%;
+}
+.fold .half-input input:focus {
+  background-color: #fff;
+  border-color: #8c9aa6;
+}
+.fold .submit-section {
+  padding: 30px;
+}
+.fold .submit-section input {
+  background-color: #5fcf80;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 16px;
+  width: 100%;
+}
+.fold .submit-section input:hover {
+  background-color: #34ad58;
 }
