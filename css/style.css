@@ -105,8 +105,13 @@ textarea, input, button {
 
 .fold {
   background: #5fcf80;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 15px;
+}
+@media (min-width: 800px) {
+  .fold {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
 }
 .fold .text {
   color: #fff;
@@ -173,6 +178,13 @@ textarea, input, button {
 .fold .half-input input:focus {
   background-color: #fff;
   border-color: #8c9aa6;
+}
+.fold .half-input span {
+  color: #ED5A5A;
+  display: none;
+  font-size: 14px;
+  margin-top: 5px;
+  position: absolute;
 }
 .fold .submit-section {
   margin: 20px 0;

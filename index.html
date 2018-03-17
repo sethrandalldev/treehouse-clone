@@ -43,24 +43,28 @@
                         <div class="half-input">
                             <label for="firstname">First name</label>
                             <input type="text" id="firstname">
+                            <span id="first-error">Please enter your first name</span>
                         </div>
                         <div class="half-input">
                             <label for="lastname">Last name</label>
                             <input type="text" id="lastname">
+                            <span id="last-error">Please enter your last name</span>
                         </div>
                     </div>
                     <div class="input-row">
                         <div class="half-input">
                             <label for="email">Email address</label>
                             <input type="text" id="email">
+                            <span id="email-error">Please enter a valid email address</span>
                         </div>
                         <div class="half-input">
                             <label for="password">Password</label>
-                            <input type="text" id="password">
+                            <input type="password" id="password" placeholder="">
+                            <span id="password-error">Incorrect password, please try again</span>
                         </div>
                     </div>
                     <div class="submit-section">
-                        <input type="submit" value="Claim Your Free Trial >">
+                        <input type="button" value="Claim Your Free Trial >" class="submit-button">
                         <p>You are agreeing to our <a href="#/">Terms and Services</a></p>
                     </div>
                 </form>
