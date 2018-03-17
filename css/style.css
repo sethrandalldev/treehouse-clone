@@ -8,11 +8,18 @@ html {
   h1 {
     font-size: 1.5rem;
   }
+  h1, h2, h3, h4, h5, h6 {
+    color: #384047;
+  }
   
   @media screen and (min-width: 800px) {
     h1 {
       font-size: 2rem;
     }
+  }
+
+  p {
+    color: #717f86;
   }
   .container {
     margin: 0 auto;
@@ -55,11 +62,19 @@ html {
 textarea, input, button { 
   outline: none; 
 }
-
+.top-header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
 .header h1 {
-  color: #5fcf80;
-  float: left;
   margin: 15px 0;
+  float: left;
+}
+.header h1 > a {
+  color: #5fcf80;
+  font-size: 0.7em;
+  text-decoration: none;
 }
 .header ul {
   float: right;
@@ -99,12 +114,14 @@ textarea, input, button {
   padding-right: 50px;
 }
 .fold .text h3 {
+  color: #fff;
   font-size: 3rem;
   font-weight:bold;
   line-height: 1.3em;
   margin-bottom: 20px;
 }
 .fold .text p {
+  color: #fff;
   font-weight: bold;
   line-height: 1.3;
 }
@@ -168,12 +185,12 @@ textarea, input, button {
   color: #fff;
   padding: 16px;
   width: 100%;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
 }
 .fold .submit-section input:hover {
   background-color: #34ad58;
 }
 .fold .submit-section p {
-  color: #717f86;
   font-size: 13px;
 }
 .fold .submit-section a {
@@ -187,7 +204,6 @@ textarea, input, button {
   text-align: center;
 }
 .skills h3 {
-  color: #384047;
   font-size: 1.8em;
   margin-bottom: 10px;
 }
@@ -226,10 +242,153 @@ textarea, input, button {
   margin-top: 30px;
 }
 .skills p {
-  color: #717f86;
   line-height: 1.5em;
 }
 .skills a {
   color: #42b4d6;
   text-decoration: none;
+}
+.clients {
+  background: #f4f7f8;
+  padding: 80px 0 90px;
+}
+.clients .one {
+  border-bottom: 1px solid #dee7ea;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.clients i {
+  color: #94A3A8;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.clients .container .half:last-child {
+  border-left: 1px solid #dee7ea;
+}
+.clients .quote {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.clients .quote-mark {
+  opacity: 0.03;
+  font-weight: normal;
+  font-size: 400px;
+  margin: 0;
+  margin-top: -30px;
+  height: 130px;
+}
+.clients .client-image {
+  border-radius: 50%;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  max-width:50px;
+}
+.clients .quote-details {
+  float: left;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.clients .quote-details p {
+  color: #97a4ad;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.clients .video {
+  padding: 20px;
+  background: #eceff2;
+  border-radius: 10px;
+  margin: 60px 15px 40px;
+}
+.clients iframe {
+  border-radius: 4px;
+}
+.start-cta {
+  background: #5fcf80;
+  padding: 80px 0 90px;
+}
+.start-cta .cta {
+  background: #fff;
+  max-width: 570px;
+  padding: 30px;
+  margin: 0 auto;
+  float: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+}
+.start-cta .cta h3 {
+  font-size: 1.8em;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.start-cta .cta p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.start-cta .cta i {
+  color: #42b4d6;
+  float: left;
+  margin-right: 15px;
+}
+.start-cta .cta-link-wrapper {
+  margin-top: 25px;
+}
+.start-cta .cta-link{
+  background-color: #42b4d6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+  width: 100%;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+}
+.start-cta .cta-link:hover {
+  background-color: #3f8abf;
+}
+.footer {
+  background-color: #f9fafa;
+  padding: 80px;
+}
+.footer .logo {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.footer .logo > a {
+  color: #5fcf80;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+.footer i {
+  color: #2d3339;
+}
+.footer i:hover {
+  color: #5FCF80;
+}
+.footer p {
+  margin: 5px auto;
+  max-width: 150px;
+}
+.footer .copyright {
+  font-size: 0.875em;
+  max-width: none;
+}
+.footer p > a {
+  color: #7b8b8e;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+.footer p > a:hover {
+  color: #637173;
+}
+.footer .social {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.footer .social i {
+  padding: 0 2px;
 }
