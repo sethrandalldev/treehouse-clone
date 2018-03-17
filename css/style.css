@@ -57,6 +57,7 @@ textarea, input, button {
 }
 
 .header h1 {
+  color: #5fcf80;
   float: left;
   margin: 15px 0;
 }
@@ -89,19 +90,23 @@ textarea, input, button {
 
 .fold {
   background: #5fcf80;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .fold .text {
   color: #fff;
+  margin-top: 80px;
+  padding-right: 50px;
 }
 .fold .text h3 {
-  font-size: 38px;
-  font-weight: normal;
+  font-size: 3rem;
+  font-weight:bold;
+  line-height: 1.3em;
   margin-bottom: 20px;
 }
 .fold .text p {
   font-weight: bold;
+  line-height: 1.3;
 }
 .fold .form {
   background: #FFF;
@@ -111,13 +116,26 @@ textarea, input, button {
   background: #637a91;
   border-radius: 5px 5px 0 0;
   color: #fff;
+  font-size: 1rem;
   margin: 0;
+  margin-bottom: 25px;
   padding: 20px;
   text-align: center;
 }
+.fold .form-header span {
+  font-weight: normal;
+}
 .fold .input-row {
-  margin: 0 30px;
-  width: 100%;
+  margin: 25px;
+  min-height: 75px;
+}
+.fold input,
+.fold label {
+  font-weight: bold;
+}
+.fold label {
+  color: #40484a;
+  margin-bottom: 5px;
 }
 .fold .half-input {
   float: left;
@@ -140,7 +158,8 @@ textarea, input, button {
   border-color: #8c9aa6;
 }
 .fold .submit-section {
-  padding: 30px;
+  margin: 20px 0;
+  padding: 30px 25px;
 }
 .fold .submit-section input {
   background-color: #5fcf80;
@@ -152,4 +171,65 @@ textarea, input, button {
 }
 .fold .submit-section input:hover {
   background-color: #34ad58;
+}
+.fold .submit-section p {
+  color: #717f86;
+  font-size: 13px;
+}
+.fold .submit-section a {
+  color: #42b4d6;
+  text-decoration: none;
+}
+.skills {
+  padding: 90px 0;
+}
+.skills .one {
+  text-align: center;
+}
+.skills h3 {
+  color: #384047;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.skills .one p {
+  margin-bottom: 50px;
+  max-width: none;
+}
+.skills .font {
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 240px;
+  width: 240px;
+}
+.skills i {
+  color: #384047;
+  padding: 80px 0;
+}
+.skills .one-third:first-child .font {
+ background-color: #DCE1E5;
+}
+.skills .one-third:nth-child(2) .font {
+  background-color: #D2E9F8;
+}
+.skills .one-third:last-child .font {
+  background-color: #FCBEB9;
+}
+.skills h4,
+.skills p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+}
+.skills h4 {
+  color: #4c5760;
+  margin-top: 30px;
+}
+.skills p {
+  color: #717f86;
+  line-height: 1.5em;
+}
+.skills a {
+  color: #42b4d6;
+  text-decoration: none;
 }
